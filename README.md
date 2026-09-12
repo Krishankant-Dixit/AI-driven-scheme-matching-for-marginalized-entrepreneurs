@@ -4,6 +4,48 @@
 
 An AI-powered platform that helps marginalized and underserved entrepreneurs discover **relevant government schemes** by intelligently matching their personal, financial, business, and demographic profiles with verified scheme eligibility criteria.
 
+## Current Implementation
+
+The repository contains the Phase 1-10 MVP foundation: authenticated user-owned profiles, deterministic eligibility, structured matching, recommendation generation, history, saved schemes, role-protected admin APIs, data-quality checks, and responsive React pages.
+
+```text
+frontend/  React + Vite + Tailwind CSS + Axios + React Router
+backend/   FastAPI + Pydantic settings + CORS + MongoDB configuration
+```
+
+The backend exposes authentication, profile, eligibility, matching, recommendation, history, saved-scheme, scheme-detail, and admin APIs. The Phase 7 semantic service is not present in this repository; semantic and final scores remain null and are not fabricated.
+
+### Run Locally
+
+Frontend:
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Backend:
+
+```powershell
+cd backend
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Run tests:
+
+```powershell
+$env:PYTHONPATH="backend"
+.venv\Scripts\python.exe -m pytest backend/tests -q
+```
+
+See [ARCHITECTURE.md](ARCHITECTURE.md), [API.md](API.md), [DEPLOYMENT.md](DEPLOYMENT.md), [SECURITY.md](SECURITY.md), and [PRODUCTION_NOTES.md](PRODUCTION_NOTES.md) for final project documentation.
+
+Copy `frontend/.env.example` and `backend/.env.example` to `.env` files when local configuration is needed. No credentials are committed.
+
 ---
 
 ## 🏆 Smart India Hackathon 2026

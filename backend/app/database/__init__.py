@@ -1,0 +1,1 @@
+"""Database integration boundaries for the application."""

@@ -1,0 +1,82 @@
+{
+  "rules": [
+    {
+      "rule_id": "PMEGP-INFO-001",
+      "scheme_id": "PMEGP",
+      "rule_type": "REQUIRED_INFORMATION",
+      "field": "current_official_guidelines",
+      "operator": "EXISTS",
+      "expected_value": null,
+      "mandatory": false,
+      "source": "https://www.kviconline.gov.in/pmegpeportal/pmegponlineapp.jsp",
+      "verification_status": "UNKNOWN",
+      "source_type": "OFFICIAL_PORTAL",
+      "notes": "Detailed current eligibility rules must be verified before being represented as mandatory rules."
+    },
+    {
+      "rule_id": "PMEGP-INFO-002",
+      "scheme_id": "PMEGP",
+      "rule_type": "REQUIRED_INFORMATION",
+      "field": "project_type_and_cost",
+      "operator": "EXISTS",
+      "expected_value": null,
+      "mandatory": false,
+      "source": "https://www.kviconline.gov.in/pmegpeportal/pmegponlineapp.jsp",
+      "verification_status": "UNKNOWN",
+      "source_type": "OFFICIAL_PORTAL",
+      "notes": "Project-specific conditions are not converted into mandatory rules until current official guidance is verified."
+    },
+    {
+      "rule_id": "PMMY-INFO-001",
+      "scheme_id": "PMMY",
+      "rule_type": "REQUIRED_INFORMATION",
+      "field": "current_lender_guidelines",
+      "operator": "EXISTS",
+      "expected_value": null,
+      "mandatory": false,
+      "source": "https://www.pmmymudra.com/",
+      "verification_status": "UNKNOWN",
+      "source_type": "OFFICIAL_PORTAL",
+      "notes": "Current lender-specific conditions are not asserted as scheme-wide mandatory rules."
+    },
+    {
+      "rule_id": "STAND-UP-INFO-001",
+      "scheme_id": "STAND_UP_INDIA",
+      "rule_type": "REQUIRED_INFORMATION",
+      "field": "current_stand_up_india_guidelines",
+      "operator": "EXISTS",
+      "expected_value": null,
+      "mandatory": false,
+      "source": "https://www.standupmitra.in/",
+      "verification_status": "UNKNOWN",
+      "source_type": "OFFICIAL_PORTAL",
+      "notes": "Detailed control, ownership, and loan conditions require verification from current official guidance."
+    },
+    {
+      "rule_id": "PM-SVANIDHI-LOCATION-001",
+      "scheme_id": "PM_SVANIDHI",
+      "rule_type": "LOCATION",
+      "field": "notified_state_or_union_territory",
+      "operator": "EXISTS",
+      "expected_value": null,
+      "mandatory": true,
+      "source": "https://pmsvanidhi.mohua.gov.in/",
+      "verification_status": "VERIFIED",
+      "source_type": "OFFICIAL_PORTAL",
+      "notes": "The official portal states that beneficiaries belong to States/UTs with notified rules and scheme under the Street Vendors Act, 2014."
+    },
+    {
+      "rule_id": "SVEP-INFO-001",
+      "scheme_id": "SVEP",
+      "rule_type": "REQUIRED_INFORMATION",
+      "field": "current_svep_guidelines",
+      "operator": "EXISTS",
+      "expected_value": null,
+      "mandatory": false,
+      "source": "https://aajeevika.gov.in/en/content/startup-village-entrepreneurship-program-svep",
+      "verification_status": "UNKNOWN",
+      "source_type": "OFFICIAL_GOVERNMENT",
+      "notes": "Detailed eligibility conditions were not added without an extractable official rule source."
+    }
+  ]
+}

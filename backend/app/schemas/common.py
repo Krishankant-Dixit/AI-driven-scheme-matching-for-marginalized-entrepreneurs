@@ -1,0 +1,23 @@
+from enum import StrEnum
+
+
+class ValueState(StrEnum):
+    PASS = "PASS"
+    FAIL = "FAIL"
+    UNKNOWN = "UNKNOWN"
+    NOT_APPLICABLE = "NOT_APPLICABLE"
+    INVALID = "INVALID"
+
+
+class SourceType(StrEnum):
+    OFFICIAL_GOVERNMENT = "OFFICIAL_GOVERNMENT"
+    OFFICIAL_PORTAL = "OFFICIAL_PORTAL"
+    VERIFIED_ADMIN = "VERIFIED_ADMIN"
+    AI_EXTRACTED = "AI_EXTRACTED"
+    AI_INFERRED = "AI_INFERRED"
+
+
+class VerificationStatus(StrEnum):
+    VERIFIED = "VERIFIED"
+    UNKNOWN = "UNKNOWN"
+    UNVERIFIED = "UNVERIFIED"
